@@ -1279,3 +1279,16 @@ variable "enable_app_2048" {
   type        = bool
   default     = false
 }
+
+#----------- EMR on EKS -----------------------
+variable "enable_emr_on_eks" {
+  description = "Enable EMR on EKS add-on"
+  type        = bool
+  default     = false
+}
+
+variable "emr_on_eks_config" {
+  description = "EMR on EKS Helm configuration values"
+  type        = any
+  default     = {}
+}
